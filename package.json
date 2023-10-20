@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "rimraf ./node_modules/.cache && mocha -r esm test/**/*.spec.js",
     "cc": "rimraf ./node_modules/.cache && nyc mocha -r esm test/**/*.spec.js"
   },
   "keywords": [],
